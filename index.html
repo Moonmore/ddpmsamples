@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Audio Samples</title>
+		<style>
+			div {
+			margin-bottom: 32px;
+			}
+			
+			.github.td {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			
+			#toc_container {
+			background: #f9f9f9 none repeat scroll 0 0;
+			border: 1px solid #aaa;
+			display: table;
+			font-size: 95%;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 8px;
+			width: auto;
+			}
+			
+			#toc_container ul  {
+			  list-style: outside none none !important; margin-left: -40px;
+			}
+			
+			.id {
+			width: 245px;
+			}
+			
+			.ood {
+			width: 280px;
+			}
+			
+			.first-col {
+			padding-right: 20px;
+			white-space: nowrap;
+			}
+				
+		  .text {
+			font-style: italic;
+			color: #666666;
+		  }
+			
+		</style>
+	</head>
+	
+	<body>
+		<article>
+			<header>
+				<h1>Audio Samples from "Leveraging Diffusion Probabilistic Modeling and Cross-speaker Style Transfer for Expressive Speech Synthesis"</h1>
+			</header>
+		</article>
+		
+		
+		<div>
+			<b>Abstract: </b>Modeling the diverse styles of speech is the key to expressive speech synthesis. Speech style representations often rely on discrete categories to describe style variation. However, in real-world situations, speech styles are expressed in more than just labeled categories. In this paper, we propose a multi-style speech synthesis method based on the diffusion model to explore the possibility of associating text input with speech styles. The method generates stylized speech that matches the input text by modeling speech styles as potential variables through a diffusion model, without additional stylized reference speech. Initially, a style encoder is pre-trained using unlabeled multi-style speech data. Guided by the style extractor, a diffusion model is adopted to build the relationship between speech style and text input. Experimental results show that the proposed method is effective in both objective and subjective evaluation metrics, which improves the model’s ability to express speech styles.
+			<p></p>
+		</div>
+		
+		<h2>Contents</h2>
+			<div id="toc_container" style="padding-top:0px;">
+			<ul>
+				<li><a href="#single_speaker_reference"> 1. Single-Speaker Results for Reference speech
+				<li><a href="#single_speaker"> 2. Single-Speaker Results for VITS and DDPM_VITS
+				<li><a href="#multi-speaker"> 3. Multi-Speaker Results for ESD dataset
+
+			</ul>
+		</div>
+		
+		<div>
+			<a name="single_speaker_reference"><h2>1. Single-Speaker Results for GST-VITS and StyleEncoder-VITS</h2></a>
+			<hr>
+			<p>Speech samples generated for different reference speech styles.</p>
+			
+			<p><b>Text: </b><span class="text">我很厌烦听你的恋爱史。</span></p>
+			<table>
+				<tbody>
+				  <tr>
+                    <th>Style</th>
+					<th>Reference speech</th>
+					<th>GST-VITS</th>
+					<th>StyleEncoder-VITS</th>
+				  </tr>
+				  <tr>
+                    <td>Angry</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/angry.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/angry/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/angry/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Disgust</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/disgust.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/disgust/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/disgust/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Fear</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/fear.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/fear/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/fear/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Happy</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/happy.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/happy/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/happy/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Neutral</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/neutral.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/neutral/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/neutral/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Sad</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/sad.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/sad/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/sad/260379.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Surprise</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/surprise.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/surprise/260379.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/surprise/260379.wav"></audio></td>
+				  </tr>
+
+				</tbody>
+			</table>
+
+            <p><b>Text: </b><span class="text">由于修养高行为好，也不会让人厌恶。</span></p>
+			<table>
+				<tbody>
+				  <tr>
+                    <th>Style</th>
+					<th>Reference speech</th>
+					<th>GST-VITS</th>
+					<th>StyleEncoder-VITS</th>
+				  </tr>
+				  <tr>
+                    <td>Angry</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/angry.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/angry/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/angry/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Disgust</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/disgust.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/disgust/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/disgust/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Fear</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/fear.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/fear/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/fear/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Happy</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/happy.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/happy/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/happy/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Neutral</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/neutral.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/neutral/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/neutral/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Sad</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/sad.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/sad/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/sad/260385.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Surprise</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/refenerce/surprise.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/gst/surprise/260385.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/single-speaker/StyleEncoder/surprise/260385.wav"></audio></td>
+				  </tr>
+
+				</tbody>
+			</table>
+        </div>
+
+		<div>
+            <a name="single_speaker"><h2>2. Single-Speaker Results for VITS and DDPM-VITS</h2></a>
+			<hr>
+			<p>This section contains samples with VITS and DDPM-VITS, style diversity with different samples. </p>
+
+			<table>
+				<tbody>
+				  <tr>
+                    <th>Text</th>
+					<th>VITS</th>
+					<th>DDPM_VITS</th>
+				  </tr>
+				  <tr>
+                    <td>从来没有任何一个人敢这么对我说话。</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/220030.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/220030.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>明天就要开学了，到现在你还没有写完作业。</th>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/220213.wav"></audio></td>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/220213.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>这让人更加愤怒不已啊。</th>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/220325.wav"></audio></td>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/220325.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>这种死板反应，太让人气愤了吧。</th>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/220567.wav"></audio></td>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/220567.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>谁说我不生气，我现在比谁都生气。</th>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/221028.wav"></audio></td>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/221028.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>没有人反对，我们在场的人都感到愤怒。</th>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/vits/221083.wav"></audio></td>
+                    <td><audio controls preload="none" class="id"><source src="wavs/ABX-test/ddpm-vits/221083.wav"></audio></td>
+				  </tr>
+
+				</tbody>
+			</table>
+		</div>
+        
+        <div>
+			<a name="multi-speaker"><h2>3. Multi-Speaker Results (ESD)</h2></a>
+			<hr>
+			<p>ESD dataset results.</p>
+			
+			<p><b>Text: </b><span class="text">只能尴尬的笑，转身愤怒把推开房门。</span></p>
+			<table>
+				<tbody>
+				  <tr>
+                    <th>Style</th>
+					<th>Reference speech</th>
+					<th>GST-VITS</th>
+					<th>StyleEncoder-VITS</th>
+				  </tr>
+				  <tr>
+                    <td>Angry</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/reference/angry.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/gst/angry/221245.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/StyleEncoder/angry/221245.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Happy</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/reference/happy.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/gst/happy/221245.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/StyleEncoder/happy/221245.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Neutral</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/reference/neutral.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/gst/neutral/221245.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/StyleEncoder/neutral/221245.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Sad</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/reference/sad.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/gst/sad/221245.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/StyleEncoder/sad/221245.wav"></audio></td>
+				  </tr>
+                  <tr>
+                    <td>Surprise</th>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/reference/surprise.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/gst/neutral/221245.wav"></audio></td>
+					<td><audio controls preload="none" class="id"><source src="wavs/multi-speaker/StyleEncoder/surprise/221245.wav"></audio></td>
+
+				</tbody>
+			</table>  
+
+		
+	</body>
+</html>
